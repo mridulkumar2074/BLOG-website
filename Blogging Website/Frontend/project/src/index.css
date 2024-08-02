@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Dekko');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Patrick+Hand+SC&display=swap');
+@font-palette-values --Mint {
+    font-family: Rocher;
+    base-palette: 2;
+  }
+@font-palette-values --Blue {
+    font-family: Rocher;
+    base-palette: 4;
+  }
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+  }
+
+header{
+    display:flex;
+    justify-content: space-between;
+    border: 4px dashed #79fd98;
+    margin-bottom: 50px;;
+    padding:20px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0, 0.2);
+    border-radius:8px;
+    height:70px;
+}
+main{
+    width:1000px;
+    margin:0 auto;
+    
+    font-family:roboto;
+    color:rgb(50, 50, 50);
+}
+
+header a{
+    text-decoration:none;
+    color:inherit;
+    font-family:Rocher;
+    font-palette: --Mint;
+    
+}
+
+header nav a{
+    font-size:2rem;
+    font-weight:500;
+    color:rgb(108, 108, 108);
+    font-palette:--Mint;
+}
+header nav a{
+    font-size:2rem;
+    font-weight:500;
+    color:rgb(108, 108, 108);
+    font-palette:--Mint;
+}
+
+header nav a:hover{
+    transition:0.15s;
+    color:rgb(50, 50, 50);
+}
+.heading{
+    font-weight:bold;
+    font-size: 3rem;
+    margin-left:160px;
+}
+header nav{
+    display:flex;
+    gap:20px;
+}
+.heading_sgn{
+    margin-right:30px;
+    margin-top:10px;
+}
+.post_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    border: 4px dashed #79fd98;
+    border-radius: 8px;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.06), 0 6px 20px 0 rgba(0,0,0, 0.05);
+}
+
+.text_container {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.image_container {
+    flex-shrink: 0;
+}
+
+.image_container img {
+    max-width: 300px; /* Adjust the max width as needed */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.author_description{
+    font-weight:bold;
+    font-size:0.7rem;
+    color:rgb(108, 108, 108);
+   
+}
+p.author_description{
+   margin:0px;
+}
+
+.text_container h2{
+    margin-bottom: 5px;
+}
+.summary{
+    margin-top: 3px;;
+}
+.author_description a{
+    text-decoration: none;
+    color:inherit;
+}
+.author_description a:hover{
+   transition:0.15s;
+   color:rgb(50, 50, 50);
+}
+.outer_login_container {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+  }
+  
+  .login_container {
+    display: flex;
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center children horizontally */
+    padding: 30px;
+    border: 1px solid rgb(237, 237, 237);
+    box-shadow: 0 4px 8px 0 rgba(133, 255, 133, 0.9), 0 6px 20px 0 rgba(133, 255, 133, 0.8);
+    border-radius: 10px;
+  }
+  
+  .signin {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 300px; /* Allow the form to adjust based on content */
+   /* Limit the maximum width */
+  }
+  
+  .signin input {
+    border: 2px solid rgb(59, 255, 59);
+    border-radius: 8px;
+    height: 30px;
+    padding: 8px;
+    padding-left: 13px;
+    font-weight:400;
+    outline:none;
+    color:rgb(11, 188, 11);
+    font-weight: bold;
+    font-size: 1.05rem;
+    
+  }
+  
+  .signin input::placeholder {
+    font-weight: bold;
+    font-size: 1.04rem;
+    
+    color:rgb(112, 204, 112);
+  }
+  .signin input:focus{
+    border: 2px solid rgb(11, 188, 11);
+  }
+  .signin button {
+    height: 45px;
+    border-radius: 8px;
+    font-size: 1.05rem;
+    border: solid 2px rgb(11, 188, 11);
+    font-weight:bold;
+    background-color:rgb(22, 222, 82);
+    cursor:pointer;
+    color:white;
+  }
+.signin button:hover{
+    transition:0.2s;
+   background-color:rgb(69, 255, 69);
+}
+h1.header, div.login_container h1{
+    font-family: Rocher;
+    font-palette: --Mint;
+    font-size: 2.3rem;
+    margin-top:0;
+}
+
+h1,h2, a.edit_btn{
+    color:rgb(3, 144, 3);
+    font-family: "Patrick Hand SC",'Pangolin', 'Dekko',Roboto;
+    font-size: 1.9rem;
+    margin-top: 0px;;
+    text-decoration:none;
+}
+
+p{
+    color:rgb(3, 144, 3);
+    font-family: 'Dekko',Roboto;
+}
+.croc_img{
+    width:140px;
+    height:80px;
+    margin-top: 0px;
+    margin-left:20px;
+}
+.floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+   
+}
+
+@keyframes floating {
+    from { transform: translate(0,  -15px); }
+    65%  { transform: translate(0, 5px); }
+    to   { transform: translate(0, -15px); }    
+}
+
+/* Base styles for Quill Editor with customizations */
+.ql-editor {
+    border: 2px solid rgb(59, 255, 59); /* 4px green dotted border */
+    border-radius: 10px; /* Optional: Add some border radius for smoother corners */
+    padding: 10px;
+    border-top:none;
+    
+     /* Optional: Add some padding inside the editor container */
+}
+
+/* Custom toolbar styling */
+div.ql-toolbar.ql-snow {
+    border: 2px solid rgb(59, 255, 59);
+    
+    border-radius: 10px;/* Remove default toolbar bottom border */
+}
+
+/* Custom editor styling */
+div.ql-editor {
+    min-height: 400px; /* Larger text area for typing */
+    font-size: 18px; /* Larger text size for paragraphs */
+    line-height: 1.6; /* Adjust line height for better readability */
+    padding: 20px; 
+
+    /* Add some padding inside the editor */
+}
+div.ql-container.ql-snow{
+    border:none;
+    margin-bottom:10px;
+}
+
+.create_input {
+    border: 2px solid rgb(59, 255, 59);
+    border-radius: 8px;
+    height: 30px;
+    padding: 8px;
+    padding-left: 13px;
+    font-weight:400;
+    outline:none;
+    color:rgb(11, 188, 11);
+    font-weight: bold;
+    font-size: 1.05rem;
+    width:975px;
+    margin-bottom:10px;
+  }
+  
+  .create_input input::placeholder {
+    font-weight: bold;
+    font-size: 1.04rem;
+    
+    color:rgb(112, 204, 112);
+  }
+
+  .add_img
+  {
+    font-weight: bold;
+    font-size: 1.04rem;
+    
+    color:rgb(103, 197, 103);
+    margin-left:13px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+
+  input.choose_img{
+    font-size: 1.05rem;
+    margin-left: 5px;
+    margin-bottom:10px;
+    color:rgb(103, 197, 103);
+    font-weight: bold;
+  }
+
+  .post_btn
+  {
+    height: 45px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    width:150px;
+    border: solid 2px rgb(11, 188, 11);
+    font-weight:bold;
+    background-color:rgb(22, 222, 82);
+    cursor:pointer;
+    color:white;
+    margin-left:45%;
+    margin-bottom: 50px;
+  }
+
+button.post_btn:hover{
+    transition:0.2s;
+   background-color:rgb(69, 255, 69);
+}
+div.text_container a{
+    text-decoration:none;
+}
+
+.post_page{
+    font-size:2.5rem;
+}
+div.post_page{
+    font-size: 1.4rem;
+}
+div.outer_post_div{
+    padding:40px;
+    padding-top: 30px;
+    border:4px dashed #79fd98;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.06), 0 6px 20px 0 rgba(0,0,0, 0.05);
+}
+.author{
+    color:rgb(3, 144, 3);
+    font-family: 'Dekko',Roboto;
+}
+
+.outer_post_div img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+.post_back_btn{
+    border:none;
+    background-color: white;
+    font-size: 2.5rem;
+    cursor:pointer;
+    font-stretch: expanded;
+    color:rgb(3, 144, 3);
+    display:inline-block;
+    
+}
+.edit_btn{
+    margin-left:750px;
+    width:100px;
+    font-size: 1.4rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+a.edit_btn{
+    font-weight: bold;
+  
+    text-align: center;
+    border-radius: 8px;
+    font-family: 'Dekko';
+    font-size:1.9rem;
+}
